@@ -30,6 +30,13 @@ namespace GroupCallerBot
             chatId = chatid;
         }
     }
+    public class ChatData
+    {
+        public int id { get; set; }
+        public long userId { get; set; }
+        public string nickName { get; set; }
+        public long chatId { get; set; }
+    }
 
     public class AppllicationContext : DbContext
     {
