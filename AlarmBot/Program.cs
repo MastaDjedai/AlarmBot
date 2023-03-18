@@ -1,9 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.VisualBasic;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Diagnostics.Metrics;
-using System.Security.Cryptography.X509Certificates;
 using Telegram.Bot;
 using Telegram.Bot.Exceptions;
 using Telegram.Bot.Polling;
@@ -30,14 +25,7 @@ namespace GroupCallerBot
             chatId = chatid;
         }
     }
-    public class ChatData
-    {
-        public int id { get; set; }
-        public long userId { get; set; }
-        public string nickName { get; set; }
-        public long chatId { get; set; }
-    }
-
+   
     public class AppllicationContext : DbContext
     {
         public DbSet<UsersData> Users => Set<UsersData>();
